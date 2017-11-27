@@ -52,8 +52,8 @@ file type: ino
 Handle file as: source
 Compilation line: 
 
-'''
+```
 $(CXX) -xc++ $(SourceSwitch) "$(FileFullPath)" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/$(ObjectName)$(ObjectSuffix) $(IncludePath)
-'''
+```
 
 
