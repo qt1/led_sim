@@ -51,7 +51,9 @@ add the file type ino (press new... button on the right of the list) then set:
 file type: ino
 Handle file as: source
 Compilation line: 
+
 '''
 $(CXX) -xc++ $(SourceSwitch) "$(FileFullPath)" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/$(ObjectName)$(ObjectSuffix) $(IncludePath)
 '''
+
 
