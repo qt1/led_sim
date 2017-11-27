@@ -5,22 +5,18 @@ Hardware simulator that enable writing arduino code for led installations even w
 
 ## Ubuntu
 
-### gcc
-make sure your gcc toolchain is installed. This usually comes with ubuntu at no additional cost.
-The following should install a compiler and the gtkmm libraries :
+### gcc + codelite
+Make sure your gcc toolchain is installed. This usually comes with ubuntu at no additional cost.
+The following should install a compiler and the gtkmm libraries (lines 1-2).
+Then install codelite IDE.
+Run the following 5 lines to do all of the above..
 
 ```
 sudo apt update 
 sudo apt install g++ pkg-config libgtkmm-3.0-dev 
-```
-
-### codelite
-install codelite IDE:
-
-```
 sudo apt-key adv --fetch-keys http://repos.codelite.org/CodeLite.asc
 sudo apt-add-repository "deb https://repos.codelite.org/ubuntu/ $(lsb_release -sc) universe"
-sudo apt install codelite
+sudo apt install codelite codelite-plugins
 ```
 
 ## Windows
@@ -46,4 +42,16 @@ install codelite IDE - select windows installer from the codelite download page 
 
 Try running some sample code and make sure the compiler, debugger etc are working.
 
+
+# Make codelite compile .ino files as c++
+
+Open codelite, got to settings / build settings / compilers / g++
+
+add the file type ino (press new... button on the right of the list) then set:
+file type: ino
+Handle file as: source
+Compilation line: 
+'''
+$(CXX) -xc++ $(SourceSwitch) "$(FileFullPath)" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/$(ObjectName)$(ObjectSuffix) $(IncludePath)
+'''
 
