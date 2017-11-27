@@ -43,7 +43,7 @@ install codelite IDE - select windows installer from the codelite download page 
 Try running some sample code and make sure the compiler, debugger etc are working.
 
 
-# Make codelite compile .ino files as c++
+# Configure codelite to compile .ino files as c++
 
 Open codelite, go to settings / build settings / compilers / g++
 
