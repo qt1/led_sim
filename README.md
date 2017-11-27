@@ -45,7 +45,7 @@ Try running some sample code and make sure the compiler, debugger etc are workin
 
 # Make codelite compile .ino files as c++
 
-Open codelite, got to settings / build settings / compilers / g++
+Open codelite, go to settings / build settings / compilers / g++
 
 add the file type ino (press new... button on the right of the list) then set:
 file type: ino
