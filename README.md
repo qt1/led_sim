@@ -33,8 +33,8 @@ Note that the instructions request updating the installation befor anything else
 install gcc, tools and gtkmm
 
 ```
-packman -S mingw-w64-x86_64-gcc  mingw-w64-x86_64-gdb  mingw-w64-x86_64-pkg-config pkg-config  mingw-w64-x86_64-make
-packman -S mingw-w64-x86_64-gtkmm3
+pacman -S mingw-w64-x86_64-gcc  mingw-w64-x86_64-gdb  mingw-w64-x86_64-pkg-config pkg-config  mingw-w64-x86_64-make
+pacman -S mingw-w64-x86_64-gtkmm3
 ```
 
 ### codelite
